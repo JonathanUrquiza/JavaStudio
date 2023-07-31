@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Sistema {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // TODO code application logic herePublic
         Scanner entrada = new Scanner(System.in);
@@ -11,7 +14,7 @@ public class Sistema {
         System.out.println("");
         System.out.println("");
 
-        System.out.print("¿Cual es el nombre del trabajador?");
+        System.out.println("¿Cual es el nombre del trabajador?");
         nombre = entrada.nextLine();
         System.out.println("");
 

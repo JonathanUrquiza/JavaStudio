@@ -18,7 +18,7 @@ public class Fibonacci {
             }
         }
         System.out.println("");
-        i = 0;
+        int i = 0;
         b = 1;
         a = 0;
         c = 0;
@@ -26,7 +26,7 @@ public class Fibonacci {
         System.out.println("Serie con While: ");
         while (i < 10) {
             if (i < 9) {
-                System.out.println(a + ",");
+                System.out.print(a + ",");
                 c = a + b;
                 a = b;
                 b = c;
