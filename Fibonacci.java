@@ -19,5 +19,26 @@ public class Fibonacci {
         }
         System.out.println("");
         i = 0;
+        b = 1;
+        a = 0;
+        c = 0;
+
+        System.out.println("Serie con While: ");
+        while (i < 10) {
+            if (i < 9) {
+                System.out.println(a + ",");
+                c = a + b;
+                a = b;
+                b = c;
+            } else {
+                System.out.print(a);
+            }
+            i++;
+        }
+        System.out.println("");
+        i = 0;
+        b = 1;
+        a = 0;
+        c = 0;
     }
 }
