@@ -5,59 +5,60 @@ public class Sistema {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO code application logic herePublic
-        Scanner entrada = new Scanner(System.in);
-        String nombre = "";
-        int clave = 0, antiguedad = 0;
+        try (// TODO code application logic herePublic
+                Scanner entrada = new Scanner(System.in)) {
+            String nombre = "";
+            int clave = 0, antiguedad = 0;
 
-        System.out.println("Bienvenido al sistema de gestion de vacaciones de la empresa");
-        System.out.println("");
-        System.out.println("");
+            System.out.println("Bienvenido al sistema de gestion de vacaciones de la empresa");
+            System.out.println("");
+            System.out.println("");
 
-        System.out.println("¿Cual es el nombre del trabajador?");
-        nombre = entrada.nextLine();
-        System.out.println("");
+            System.out.println("¿Cual es el nombre del trabajador?");
+            nombre = entrada.nextLine();
+            System.out.println("");
 
-        System.out.println("¿Cunto tienpo de servicio tiene el trabajador?");
-        antiguedad = entrada.nextInt();
-        System.out.println("");
+            System.out.println("¿Cunto tienpo de servicio tiene el trabajador?");
+            antiguedad = entrada.nextInt();
+            System.out.println("");
 
-        System.out.println("¿Cual es la clave del trabajador?");
-        clave = entrada.nextInt();
-        System.out.println("");
+            System.out.println("¿Cual es la clave del trabajador?");
+            clave = entrada.nextInt();
+            System.out.println("");
 
-        if (clave == 1) {
+            if (clave == 1) {
 
-            if (antiguedad == 1) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 6 dias de vacaciones");
-            } else if (antiguedad >= 2 && antiguedad <= 6) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 14 dias de vacaciones");
-            } else if (antiguedad >= 7) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 20 dias de vacaciones");
+                if (antiguedad == 1) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 6 dias de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <= 6) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 14 dias de vacaciones");
+                } else if (antiguedad >= 7) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 20 dias de vacaciones");
+                }
+
+            } else if (clave == 2) {
+
+                if (antiguedad == 1) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 7 dias de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <= 6) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 15 dias de vacaciones");
+                } else if (antiguedad >= 7) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 22 dias de vacaciones");
+                }
+
+            } else if (clave == 3) {
+
+                if (antiguedad == 1) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 10 dias de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <= 6) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 20 dias de vacaciones");
+                } else if (antiguedad >= 7) {
+                    System.out.println("El trabajador " + nombre + " tiene derecho a 30 dias de vacaciones");
+                }
+
+            } else {
+                System.out.println("Error!!!, la clave del departamento es incorrecta");
             }
-
-        } else if (clave == 2) {
-
-            if (antiguedad == 1) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 7 dias de vacaciones");
-            } else if (antiguedad >= 2 && antiguedad <= 6) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 15 dias de vacaciones");
-            } else if (antiguedad >= 7) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 22 dias de vacaciones");
-            }
-
-        } else if (clave == 3) {
-
-            if (antiguedad == 1) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 10 dias de vacaciones");
-            } else if (antiguedad >= 2 && antiguedad <= 6) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 20 dias de vacaciones");
-            } else if (antiguedad >= 7) {
-                System.out.println("El trabajador " + nombre + " tiene derecho a 30 dias de vacaciones");
-            }
-
-        } else {
-            System.out.println("Error!!!, la clave del departamento es incorrecta");
         }
     }
 }
