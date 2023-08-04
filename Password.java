@@ -25,6 +25,9 @@ public class Password extends JFrame implements ActionListener {
         botone.addActionListener(this);// agega el evento del boton.
     }
 
+    private void add(JTextField textField12) {
+    }
+
     public void actionPerformed(ActionEvent e) {
         // Aca se programa el comportamiento de cada componente.
 

@@ -19,6 +19,9 @@ public class JScroll extends JFrame {
         add(scrollPane1);
     }
 
+    private void add(JTextField textField42) {
+    }
+
     public static void main(String[] args) {
 
         JScroll scroll = new JScroll();

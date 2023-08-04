@@ -20,6 +20,9 @@ public class Field extends JFrame {
 
     }
 
+    private void add(JTextField textField12) {
+    }
+
     public static void main(String[] args) {
         Field field1 = new Field();
         field1.setBounds(0, 0, 540, 400);
